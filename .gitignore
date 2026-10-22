@@ -15,3 +15,12 @@ export_credentials.cfg
 .mono/
 data_*/
 mono_crash.*.json
+
+# Downloaded tools, dependencies and validation output
+/bin/*
+!/bin/.gdignore
+/addons/gut/
+/reports/*
+!/reports/.gdignore
+__pycache__/
+/.venv/

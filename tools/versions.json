@@ -1,0 +1,26 @@
+{
+  "godot": {
+    "version": "4.7.2.stable.official.ed1daf0bf",
+    "download_url": "https://github.com/godotengine/godot-builds/releases/download/4.7.2-stable/Godot_v4.7.2-stable_win64.exe.zip",
+    "archive_sha256": "731980f9608d61333e5baf54a2ef17210acc7a538446c0cb9969f002aca1e953",
+    "directory": "bin/godot-windows-4.7.2",
+    "executable": "Godot_v4.7.2-stable_win64.exe",
+    "files": {
+      "Godot_v4.7.2-stable_win64.exe": "ab1824f85bfd8e0e4128182c000c4003a3e042245b2967848d089b2a04b22424",
+      "Godot_v4.7.2-stable_win64_console.exe": "c8f0a6bc45a19b33541501e57f6f7cd972ab18453743266339d495cbbe846643"
+    }
+  },
+  "ca_bundle": {
+    "path": "bin/certs/ca-bundle.crt",
+    "download_url": "https://raw.githubusercontent.com/godotengine/godot/4.7.2-stable/thirdparty/certs/ca-bundle.crt",
+    "sha256": "33a22c7286f7752131636a11fb9feb3fb12ecd02f1a9b3e54e5901349d37362e"
+  },
+  "gut": {
+    "version": "9.7.1",
+    "download_url": "https://github.com/bitwes/Gut/archive/refs/tags/v9.7.1.zip",
+    "archive_sha256": "14969aa46adc84aa08cdd21b9f6d1a64addd92ae60b36f02d0521ed305aa4086",
+    "archive_member": "Gut-9.7.1/addons/gut/",
+    "directory": "addons/gut",
+    "content_sha256": "b569e73edbd18f02aca676823dd97025a2cbcfb1b654fba66fd02259ba557cc8"
+  }
+}

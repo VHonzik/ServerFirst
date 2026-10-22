@@ -1,0 +1,16 @@
+; Minimal project for headless infrastructure checks; gameplay comes later.
+config_version=5
+
+[application]
+
+config/name="Server First"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+
+[network]
+
+tls/certificate_bundle_override.serverfirst_tools="res://bin/certs/ca-bundle.crt"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"

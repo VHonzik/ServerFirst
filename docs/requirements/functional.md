@@ -4,7 +4,7 @@
 
 ## Scope and Purpose
 
- Read together with [docs/requirements/non-functional.md]. These two documents define the Server First demo. Stable FR-xxx identifiers describe observable behavior and its acceptance criteria. See also [docs/milestones], a milestone map that separates development fixtures from the completed demo.
+Read together with [docs/requirements/non-functional.md]. These two documents define the Server First demo. Stable FR-xxx identifiers describe observable behavior and its acceptance criteria. See also [docs/milestones], a milestone map that separates development fixtures from the completed demo.
 
 The demo implements horizontal slice of full game functionality. All major player game loops are present: recruiting, guild management, raid organizing, loot distribution rules and two tiers of in-universe content.
 
@@ -26,8 +26,8 @@ The demo implements horizontal slice of full game functionality. All major playe
 | Boss | In-Universe encounter that Guild has to defeat to obtain Loot
 | Raid | In-Universe instance of one or more Bosses for the Guild to tackle |
 | Tier | Collection of Raids available at the same time. Raid Tiers are progressively unlocked through time. Later tiers provide strong Loot. |
-Lockout | Raid time gate-ing mechanism where Bosses can be only defeated once per reset |
-Narrator | AI system that generates randomness and storytelling elements to Game |
+| Lockout | Raid time gate-ing mechanism where Bosses can be only defeated once per reset |
+| Narrator | AI system that generates randomness and storytelling elements to Game |
 | Morale | Player happiness indicator in the guild. Low morale can lead to moral mental breaks.
 | Trait | Player behavioral pattern influencing their decision making and morale impacts |
 | Server | In-Universe collection of user and AI guilds competing for first kill of the final boss |
@@ -193,6 +193,9 @@ Acceptance:
 * If pugs were taken over guild players with rank *Novice* and above for the specific role, all non-taken guild players gain `Passed over for a pug`
 * Guild players traits related to attendance are evaluated at the raid start
 
+## Players
+
+
 ## DATA-001 - Morale effects
 
 The following table defines the named morale effects used by the requirements.
@@ -234,4 +237,15 @@ The following table defines the named morale effects used by the requirements.
 | Raid canceled last-minute | -5 | 3 weeks |
 | Passed over for a pug | -8 | 4 weeks |
 
+## DATA-002 - Classes
+
+The following tables defines all In-Universe classes that Character can have.
+
+### Tanks
+
+| Name | Avoidance | Migitation | EHP | CDs | AOE threat | Cleave threat | Single-target threat | Mobility | Initial gearing | Gear scaling | Buffs | Damage |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |  --- |
+| Dookh |       ++ |          + |   - |   + |          + |             0 |                    0 |        - |               + |            0 |     - |      - |
+| ???   |        + |          0 |  ++ |   - |          0 |             0 |                    + |        0 |               - |            0 |     + |      + |
+| ???   |        - |         ++ |   + |   0 |          - |             + |                    + |        + |               0 |            + |     0 |      0 |
 
